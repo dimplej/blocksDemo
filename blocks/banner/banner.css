@@ -1,0 +1,12 @@
+.banner {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-color: black;
+    border-radius: 7px;
+    transition: 0.3s;
+    width: 60%;
+    margin: 1rem;
+    padding: 1rem;
+    text-shadow: 0 0 1px red, 0 0 3px #ffffff;
+    background-color: white;
+    color:green;
+}
