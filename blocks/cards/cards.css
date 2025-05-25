@@ -25,3 +25,31 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.cards .c {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 12px;
+  margin-left: 30%;
+  background-color: green;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cards .c:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.cards .c:active {
+  background-color: #004a94;
+  transform: translateY(0);
+}
+
+
