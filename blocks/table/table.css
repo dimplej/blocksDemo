@@ -1,0 +1,71 @@
+/* Table container */
+.sampleData {
+  max-width: 800px;
+  margin: 1em auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Table styling */
+.sampleData table {
+     margin-top: 2.5em;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sampleData th, 
+.sampleData td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.sampleData th {
+  background-color: #6495ED; /* cornflowerblue */
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.sampleData td {
+  background-color: #f8faff; /* light blue/white */
+}
+
+/* Pagination container */
+.sampleData .pagination {
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Pagination buttons */
+.sampleData .pagination button {
+  padding: 8px 16px;
+  font-size: 1em;
+  background-color: #6495ED;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sampleData .pagination button:disabled {
+  background-color: #a9c0f5;
+  cursor: not-allowed;
+}
+
+.sampleData .pagination button:hover:not(:disabled) {
+  background-color: #4178d7;
+}
+
+/* Pagination page info */
+.sampleData .pagination span {
+  font-weight: 600;
+  font-size: 1em;
+  color: #333;
+}
