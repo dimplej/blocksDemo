@@ -1,4 +1,23 @@
+version: 1
 indices:
   default:
     include:
-      - /**
+      - '**'
+    target: /query-index
+    properties:
+      path:
+        select: head > meta[name="path"]
+        value: |
+          attribute(el, 'content')
+      title:
+        select: head > meta[property="title"]
+        value: |
+          attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: |
+          attribute(el, 'content')
+      image:
+        select: head > meta[property="og:image"]
+        value: |
+          attribute(el, 'content')
