@@ -6,7 +6,7 @@ indices:
     target: /query-index
     properties:
       path:
-        select: head > meta[name="path"]
+        select: head > meta[property="og:url"],head > meta[name="path"]
         value: |
           attribute(el, 'content')
       title:
