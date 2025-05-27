@@ -10,14 +10,18 @@ indices:
         value: |
           attribute(el, 'content')
       title:
-        select: head > meta[property="title"]
+        select: head > meta[property="og:title"], head > meta[name="title"]
         value: |
           attribute(el, 'content')
       description:
-        select: head > meta[name="description"]
+        select: head > meta[name="description"], head > meta[property="og:description"]
         value: |
           attribute(el, 'content')
       image:
-        select: head > meta[property="og:image"]
+        select: head > meta[property="og:image"], head > meta[name="image"]
+        value: |
+          attribute(el, 'content')
+      robots:
+        select: head > meta[name="robots"]
         value: |
           attribute(el, 'content')
